@@ -1,3 +1,5 @@
+przed uruchomieniem
+
 narazie funkcjonalosc to: sciaganie listy z API i wyswietlanie, po wpisaniu w search odpowiedniej rasy (dokladnie) wyswietla sie losowy obrazek z bazy dla psa)
 
 Potrzeba dodac funkcje zeby po kliknieciu na psa z listy wyswietlalo sie jego zdjecie i najlepiej link do wikiedii

@@ -1,35 +1,44 @@
-<h1>Doggogram</h1>
-<div class="list">
-<!-- <ul class="list-group">
-  <li
-      *ngFor="let dog of dogarr; let i = index" [attr.data-index]
-      class="list-group-item">
-      {{ dog }}
-      <button type="button" (click)="showPic()" >ddd</button>
-  </li>
-</ul> -->
-<div ngModel [id]="test" >TEST</div>
-<div [id]="wikipage"></div>
+
 <div>
-  <input [(ngModel)]="searchStr" ngDefaultControl  type="text" placeholder="Search by breed">
+  <!-- <input [(ngModel)]="searchStr" ngDefaultControl  type="text" placeholder="Wpisz nazwę rasy"> -->
+
 </div>
-<div>
-  <button type="button" (click)="showPic()" class="btn btn-success btn-sm">
-      Search
-    </button>
+
+
+
+<div class="container">
 </div>
-</div>
-<div>
-  <img [src]="img">
-</div>
-<form action="" name="form">
-  <select id="select" size="10" ngDefaultControl>
-    <option type="text" ngDefaultControl
-    *ngFor="let dog of dogarr; let i = index" [attr.data-index]
-  [value]="dog" [id]="i" (click)="showtest()">
- {{ dog }}
-    </option>
+
+<div id="upper-flex-container">
   
- 
-  </select>
-</form>
+  <div class="flex-container">
+    <div class="flex-left-list">
+      <div id="select" class="border">
+        <button class="btn" type="text" ngDefaultControl
+        *ngFor="let dog of dogarr; let i = index" [attr.data-index]
+        [value]="dog" [id]="i" onclick="getDogValue(this.value)">
+        {{ dog }}
+      </button>
+    </div>
+    </div>
+    <div class="flex-right">
+      
+      <div id="boxinner">
+        
+      <img class="border " id="picHolder" [src]="img" src="">
+  
+      <div class="title"><div id="title2">Pies Zbrodniarz</div></div>
+  
+      <div class="description shadow">
+        <div id="intro">Wybierz rasę psa z listy</div>
+        <a id="link" href="#" target="_blank" class="hidden">Sprawdź informacje o rasie w Wikipedii *</a>
+        <p class="hidden">*Większość i tak nie działa</p>
+      </div>
+  
+    </div>
+
+
+  </div>
+</div>
+
+</div>

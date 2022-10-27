@@ -11,7 +11,7 @@ export class AppComponent implements OnInit, AfterViewInit {
   posts:any;
   subtype:any;
   dogarr:any = [];
-  img:any;
+  img:any = 'https://www.zyciepabianic.pl/imageDb/Gallery/2019/rectangle/876/66386.jpg?0424112942';
   searchStr: String;
   imgarr:any = [];
   searchValue:any;
@@ -58,7 +58,7 @@ export class AppComponent implements OnInit, AfterViewInit {
           console.log(this.searchStr);
           
         } else {
-          this.img = "https://dog.ceo/img/dog-api-logo.svg"
+          this.img = "https://www.zyciepabianic.pl/imageDb/Gallery/2019/rectangle/876/66386.jpg?0424112942"
         }
       })
     }
@@ -69,9 +69,10 @@ export class AppComponent implements OnInit, AfterViewInit {
         this.imgarr = response.message;
         console.log("This is showtest function");
         console.log(this.test.nativeElement);
-        // this.test.nativeElement.innerHTML = "DUPA"
-
     })
   }
 }
+
+
+
 

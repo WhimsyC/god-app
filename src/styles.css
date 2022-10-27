@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: sans-serif;
+    background-color: #EDE4E0;
+    margin: 0;
+}
+
+
+
+header {
+    position: relative;
+    font-family: 'Covered By Your Grace', sans-serif;
+    color: #EDE4E0;
+    text-align: center;
+    line-height: 100px;
+    background-color: #665A48;   
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+
+#proper-header {
+    position: relative;
+    width: 1200px;
+}
+
+#paw {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-45deg);
+    content: "";
+    background-image: url(./assets/img/paw.png);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+@keyframes paw {
+    10% {transform: rotate(-20deg)}
+    20% {transform: rotate(-45deg)}
+    30% {transform: rotate(-20deg)}
+    40% {transform: rotate(-45deg)}
+    50% {transform: rotate(-20deg)}
+    60% {transform: rotate(-45deg)}
+    70% {transform: rotate(-20deg)}
+    80% {transform: rotate(-45deg)}
+    90% {transform: rotate(-20deg)}
+    100% {transform: rotate(-45deg)}
+}
+
+.animation {
+    animation-duration: 0.6s;
+    animation-timing-function: ease-out ;
+    animation-name: paw;
+}
