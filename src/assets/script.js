@@ -87,7 +87,6 @@ function getDogValue(dogValue) {
 
 
 paw.addEventListener("click", function() { 
-  console.log("KURWAAA");
   paw.classList.remove("animation")
 
   setTimeout(function(){
