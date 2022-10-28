@@ -15,20 +15,6 @@ function wiki() {
   document.getElementById("link").href = wiki_url
 }
 
-// async function getWikiApi(wiki_url) {
-
-//   const  response = await fetch(wiki_url)
-
-//   var dataW = await response.json()
-//   getWikiLink(dataW)
-// }
-
-// function getWikiLink(dataW) {
-//   testO = dataW
-//   console.log(testO);
-// }
-
-
 function toupper(string){
   let x  = string[0].toUpperCase() + string.substring(1)
   return x
